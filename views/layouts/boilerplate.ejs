@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderlust</title>
+
+  <!-- ✅ Main Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/rating.css">
+
+  <!-- ✅ Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- ✅ Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  >
+
+  <!-- ✨ Modern Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Poppins:wght@300;500;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- ✅ Mapbox CSS -->
+  <link
+    href="https://api.mapbox.com/mapbox-gl-js/v3.17.0-beta.1/mapbox-gl.css"
+    rel="stylesheet"
+  >
+
+  <!-- ✅ Mapbox JS -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.17.0-beta.1/mapbox-gl.js"></script>
+
+  <!-- ✨ Custom Font + UI Styling -->
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', 'Poppins', sans-serif;
+      font-weight: 400;
+      background-color: #f8f9fa;
+      color: #2d2d2d;
+    }
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      color: #212529;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0d6efd;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #084298;
+    }
+
+    .highlight-text {
+      font-weight: 800;
+      color: #0d6efd;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.15);
+    }
+
+    #map {
+      width: 100%;
+      height: 300px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ✅ Navbar -->
+  <%- include("../includes/navbar.ejs") %>
+
+  <!-- ✅ Flash Messages + Main Body -->
+  <div class="container mt-3">
+    <%- include("../includes/flash.ejs") %>
+    <%- body %>
+  </div>
+
+  <!-- ✅ Footer -->
+  <%- include("../includes/footer.ejs") %>
+
+  <!-- ✅ Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ✅ Your custom script -->
+  <script src="/js/script.js"></script>
+</body>
+</html>
