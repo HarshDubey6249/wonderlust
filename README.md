@@ -55,7 +55,7 @@ Passport.js (Authentication)
 Express-session
 
 Joi (Validation)
-
+------------------------------------------------------------------
 📂 Project Structure
 wanderlust/
 │
@@ -95,6 +95,7 @@ wanderlust/
 ├── app.js                 # Main application file
 ├── package.json
 └── README.md
+-------------------------------------------------------------
 
 🔄 Application Flow (Flowchart)
 User
@@ -128,6 +129,7 @@ User Signup/Login
         │
         ▼
  Protected Routes Access
+ -------------------------------------------------------------------------
 
 🧩 MVC Architecture Used
 Layer	Responsibility
@@ -143,6 +145,7 @@ Custom ExpressError class
 Global error handler middleware
 
 Flash messages for better UX
+--------------------------------------------------------
 
 📸 Image Upload Flow
 User Upload Image
